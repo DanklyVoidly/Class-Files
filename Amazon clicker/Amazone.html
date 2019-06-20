@@ -1,0 +1,105 @@
+<html>
+  <head>
+  
+    <title>Amazone Shipper</title>
+      
+      <link rel="stylesheet" type="text/css" href="AmazoneClicker.css"/>
+      
+  </head>
+
+  <body>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+    
+      function update() {
+        
+
+          $("#counter").html("<h1>You have shipped "+counter+" packages</h1>");
+
+        
+        
+
+
+      }
+
+      $(document).ready(function(){
+        var counter = 0
+        var increment = 1
+        var employee = 0;
+        var Afford = false;
+      
+        $("#Packages").click(function(){
+          counter += increment;
+          
+          $("#counter").html("<h1>You have shipped "+counter+" packages</h1>");
+
+           if (counter >= ((employee + 1) * 12)){
+            Afford = true;
+
+            }
+         
+         
+          $("#employee").click(function(){
+      
+           if (Afford = true){
+            counter = counter - ((employee + 1) * 12)
+            Afford = false;
+           
+            $("#counter").html("<h1>You have shipped "+counter+" packages</h1>");
+           
+           }
+
+           else {
+
+            
+
+
+           }
+      
+
+    })
+
+        })
+    
+      })
+
+      
+
+      $(document).ready(function(){
+        $("#upgrades").click(function(){
+          $("#panel").slideToggle("fast");
+      })
+    })
+    
+ 
+    
+    </script>
+
+
+    <div id="counter">
+      <h1>Click the icon to start!</h1>
+    </div>
+    
+    <div id="Packages">
+      <img src="http://www.freelogovectors.net/wp-content/uploads/2016/12/amazon_logo.png" height="200px">
+    </div>
+
+    <div id="upgrades">Click for upgrades</div>
+   
+    <div id="panel">
+    
+      <div id="employee">
+          <script> 
+          $("#employee").html("<h3>Hire an employee for "+((employee = 1)*12)+" packages</h3>");  </script>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/41Hkag9%2B%2B0L._SY300_QL70_.jpg" height="30px">
+
+      </div>
+      
+    </div>
+
+
+  </body>
+</html>

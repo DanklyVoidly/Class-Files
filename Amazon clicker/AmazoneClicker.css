@@ -1,0 +1,68 @@
+body{
+
+    background-image: url("PackagesGif.gif");
+    border: 10px solid orange;
+    padding: 100px;
+    text-align: center;
+
+
+      
+    
+ 
+    
+    
+    
+}
+
+#counter{
+    
+    max-width:400px;
+    margin:auto;
+    background-color: hsl(39, 100%, 50%);
+    border-radius: 100px;
+
+}
+
+
+#Packages{
+  
+    padding: 50px;
+    height: 200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
+}
+
+
+#panel, #upgrades {
+
+    font-weight: bold;
+    padding: 50px;
+    height: 200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    padding: 5px;
+    text-align: center;
+    background-color: gray;
+    border: solid 1px darkslategray;
+    letter-spacing: 3px;
+}
+
+#panel {
+
+    max-width: 500px;
+    
+    display: none;
+    
+
+}
+
+#upgrades {
+
+    max-height: 20px;
+
+}
