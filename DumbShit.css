@@ -1,0 +1,52 @@
+body{
+    background-color:sandybrown;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 1s;
+
+    animation-name: example;
+    animation-duration: 1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#ListStyles {
+    color: blue;
+    transform: rotate(20deg);
+
+}
+#Inverse:hover {transform: rotate(100deg);}
+ol {
+    color:red;
+}
+
+#Inverse {
+    background-color: black;
+    color: white;
+    float: left;
+}
+#zebra{
+    padding-top: 20px;
+    
+}
+#zebra td {
+    border-bottom: 10px solid, green;
+}
+#zebra tr {
+   border:1px green;
+}
+#zebra tr:hover {background-color: lightblue;}
+#zebra tr:nth-child(even){background-color: white;}
+#zebra th {
+    background-color:coral;
+    color:purple;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: sandybrown;}
+  to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: sandybrown;}
+  to {background-color: yellow;}
+}
