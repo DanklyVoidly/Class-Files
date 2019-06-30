@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mamamoo Fan Page</title>
+    <link rel="stylesheet" type="text/css" href="Mamamoo.css"/>
+</head>
+<body>
+    <nav>
+    </nav>
+    <div class="dropdown">
+        <button class="dropbtn">Our Beloved Members</button>
+        <div class="dropdown-content">
+        <a href="#Hwasa">화사</a>
+        <a href="#Weein">휘인</a>
+        <a href="#Moonbyul">문별</a>
+        <a href="#Solar">솔라</a>
+        </div>
+    <div id= "Hwasa">
+        Hwasa is pretty mad
+    </div>
+    <div id= "Weein">
+        Wheein is pretty happy
+    </div>
+    <div id= "Moonbyul">
+        Moonbyul is pretty cool
+    </div>
+    <div id= "Solar">
+        Solar is pretty wild
+    </div>
+</body>
+</html>
