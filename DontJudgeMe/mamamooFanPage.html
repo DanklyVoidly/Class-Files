@@ -8,27 +8,117 @@
     <link rel="stylesheet" type="text/css" href="Mamamoo.css"/>
 </head>
 <body>
-    <nav>
-    </nav>
-    <div class="dropdown">
-        <button class="dropbtn">Our Beloved Members</button>
-        <div class="dropdown-content">
-        <a href="#Hwasa">화사</a>
-        <a href="#Weein">휘인</a>
-        <a href="#Moonbyul">문별</a>
-        <a href="#Solar">솔라</a>
-        </div>
-    <div id= "Hwasa">
-        Hwasa is pretty mad
+    <nav role="navigation">
+            <ul>
+                <li><a href="#">Info</a>
+                    <ul class="dropdown" aria-label="submenu">
+                            <li><a href="mailto:Nah@gmail.com">Email</a></li>
+                            <li><a href="https://www.viagogo.com/Concert-Tickets/K-Pop/Mamamoo-Tickets">Nearest Concerts</a></li>
+                            <li><a href="https://www.google.com/search?rlz=1C1GCEA_enUS853US853&ei=Sr0aXae1Co6t-gS-gIKYCA&q=How+to+speak+korean&oq=How+to+speak+korean&gs_l=psy-ab.3..0l10.1484.7371..7569...2.0..4.245.2991.17j12j1......0....1..gws-wiz.....10..0i71j35i39j0i22i30j0i67j0i131j0i20i263.GvFeECCLpis">Contact Us</a></li>
+                            <li><a href="https://gfycat.com/mediocrewholefox">Spare Yeet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" aria-haspopup="true">Our Beloved Members</a>
+                    <ul class="dropdown" aria-label="submenu">
+                        <a href="#Hwasa"><li id= "Hlink">화사</li></a>
+                        <a href="#Weein"><li id= "Wlink">휘인</li></a>
+                        <a href="#Moonbyul"><li id= "Mlink">문별</li></a>
+                        <a href="#Solar"><li id="Slink">솔라</li></a>
+                    </ul>
+                </li>
+                <li><a href="#poll">Survey</a></li>
+            </ul>
+            </nav>
+    <div id="Hwasa">
+        <h1>Hwasa</h1>
+        어머니! 젖을 빨려 이 마음을 달래어 주시오.
+        이 밤이 자꾸 서러워지나이다.<br>
+        이 아이는 턱에 수염자리 잡히도록
+        무엇을 먹고 자랐나이까?
+        오늘도 흰 주먹이
+        입에 그대로 물려 있나이다.<br>
+        어머니
+        부서진 납인형도 슬혀진 지
+        벌써 오랩니다.
+        철비가 후누주군이 나리는 이 밤을
+        주먹이나 빨면서 새우리까?<br>
+        어머니! 그 어진 손으로
+        이 울음을 달래어 주시오.
+        원문보기
     </div>
     <div id= "Weein">
-        Wheein is pretty happy
+        <h1>Whee-in</a></h1>
+        솨― 철석! 파도소리 문살에 부서져
+        잠 살포시 꿈이 흩어진다.
+        잠은 한낱 검은 고래 떼처럼 설레어<br>
+        달랠 아무런 재주도 없다.
+        불을 밝혀 잠옷을 정성스리 여미는
+        삼경.<br>
+        염원.
+        동경의 땅 강남에 또 홍수질 것만 싶어
+        바다의 향수보다 더 호젓해진다.
+        원문보기
     </div>
     <div id= "Moonbyul">
-        Moonbyul is pretty cool
+        <h1>Moonbyul</h1>
+        <p>
+            청초한 코스모스는
+            오직 하나인 나의 아가씨
+            달빛이 싸늘히 추운 밤이면
+            옛 소녀가 못 견디게 그리워
+            코스모스 핀 정원으로 찾아간다.<br>           
+            코스모스는
+            귀또리 울음에도 수줍어지고
+            코스모스 앞에선 나는
+            어렸을 적처럼 부끄러워지나니<br>
+            내 마음은 코스모스의 마음이요
+            코스모스의 마음은 내 마음이다.
+            원문보기
+        </p>
     </div>
     <div id= "Solar">
-        Solar is pretty wild
+        <h1>Solar</h1>
     </div>
+    <script>
+            function checkform(evt)    {        
+                var myForm = document.frmhot;
+                var condition = true;
+                if(myForm.status.value==""){
+                    alert("Please select a timeframe status."); 
+                    myForm.status.focus();
+                    condition = false;
+                }
+                if (myForm.line.value==""){
+                    alert("Please select a line.");
+                    condition = false;
+                }
+                if(myForm.reason.value==""){
+                    alert("Please select a reason code.");
+                    condition = false;
+                }
+                if(myForm.partnum.value==""){
+                    alert("Please enter a part number.");
+                    condition = false;
+                }
+                if(myForm.badgescan.value==""){
+                    alert("Please enter a badge number.");
+                    condition = false;
+                }
+                if(condition){ condition =  confirm('Do you want to submit the form?'); }
+        
+                if(!condition) {
+                    if(evt.preventDefault) { event.preventDefault(); }    
+                    else if(evt.returnValue) { evt.returnValue = false; }    
+                    else { return false; }
+                }
+            }
+        </script>
+        <form method="post" action="newhotpartgenerate.php" name="frmhot" onsubmit="checkform(event)">
+            <input type="text" name="status"/>         
+            <input type="text" name="line"/>
+            <input type="text" name="reason"/>
+            <input type="text" name="partnum"/>
+            <input class="button_text" type="submit" value="Submit"/>
+         </form>
 </body>
 </html>
