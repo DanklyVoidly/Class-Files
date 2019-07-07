@@ -3,60 +3,104 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 
 
 }
-nav{
-    background-color: silver;
-    width:100%;
-    height:5%;
-    max-height: 100px;
-}
-.dropbtn {
-    background-color: silver;
-    color: darkslategray;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    position: fixed;
-  }
-  
-  .dropdown {
-    position: fixed;
-    padding: 10px;
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: relative;
-    size: 100%;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+a {
     text-decoration: none;
-    display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+  nav {
+      font-family: monospace;
+      position: fixed;
+  }
   
-  .dropdown:hover .dropdown-content {display: block;}
+  ul {
+    background: linear-gradient(-90deg,silver, gray);
+      list-style: none;
+      margin: 0;
+      padding-left: 0;
+  }
   
-  .dropdown:hover .dropbtn {background-color: silver;}
+  li {
+      color: #fff;
+    background: linear-gradient( darkgray,silver, gray);
+      display: block;
+      float: left;
+      padding: 1rem;
+      position: relative;
+      text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  li:hover,
+  li:focus-within {
+      background: gray;
+      cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+      background: gray;
+      visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+      position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+      left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block
+  }
+  
+  ul li ul li {
+      clear: both;
+    width: 100%;
+  }
+  #Hlink:hover {
+      background-color: rgb(252, 227, 0);
+  }
+  #Wlink:hover {
+    background-color: White;
+    color: black;
+  }  
+  #Mlink:hover {
+    background-color: maroon;
+
+  }
+  #Slink:hover {
+    background-color: navy;
+
+  }
   #Hwasa{
-      padding-top:1000px;
+    
+    padding: 30px;
   }
   #Weein{
-    padding-top:1000px;
+    padding: 20px;
   }
   #Moonbyul{
-    padding-top:1000px;
+    padding: 30px;
   }
   #Solar{
-    padding-top:1000px;
+    padding: 20px;
+  }
+  div{
+    
   }
