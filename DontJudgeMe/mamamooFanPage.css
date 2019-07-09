@@ -7,6 +7,7 @@ body{
 
 
 }
+}
 a {
     text-decoration: none;
   }
@@ -88,19 +89,27 @@ a {
     background-color: navy;
 
   }
-  #Hwasa{
-    
-    padding: 30px;
+  .Bio{
+    align-items: left;
+  }
+  .Bio p{
+    background-color: gray;
+    max-width: 75%;
+  }
+  .Bio img{
+    padding-right:10px;
+    float: left;
+    height: 100px;
   }
   #Weein{
-    padding: 20px;
+   
   }
   #Moonbyul{
-    padding: 30px;
+    
   }
   #Solar{
-    padding: 20px;
-  }
-  div{
     
+  }
+  .space{
+    padding:300px;
   }
