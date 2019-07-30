@@ -1,20 +1,17 @@
 body{
-    background-image: url(https://img9.uhdpixel.com/wp/u/5/moonbyul-solar-wheein-hwasa-mamamoo-u520.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    margin:0px;
 
 
-}
 }
 a {
     text-decoration: none;
   }
   
   nav {
+      z-index: 1;
       font-family: monospace;
-      position: fixed;
+      position: sticky;
+      top:0;
   }
   
   ul {
@@ -89,27 +86,84 @@ a {
     background-color: navy;
 
   }
+ 
   .Bio{
-    align-items: left;
+    font-size: 1.5em;
+    background-color: gray;
+    text-align: center;
+    margin:0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
   .Bio p{
-    background-color: gray;
-    max-width: 75%;
+    margin:0px;
   }
   .Bio img{
-    padding-right:10px;
-    float: left;
-    height: 100px;
+    align-content:center;
   }
-  #Weein{
-   
-  }
-  #Moonbyul{
-    
-  }
-  #Solar{
-    
+  .space, .space1, .space2, .space3{
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    padding:100px;
   }
   .space{
-    padding:300px;
+    min-height: 100%;
+    background-image: url(Wallpaper.png);
+  }
+  .space img{
+    position: center;
+    width:100%;
+    }
+  .space1{
+    min-height:400px;
+    background-image: url(Wallpaper1.png)
+  }
+  .space2{
+    min-height:400px;
+    background-image: url(Wallpaper2.png)
+  }
+  .space3{
+    min-height:400px;
+  }
+  .container {
+    position: relative;
+    display:block;
+    margin:auto;
+    width: 50%;
+  }
+  .image {
+    top:50%;
+    left:50%;
+    z-index: -1;
+    border-radius: 50%;
+    height: 350px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 16px 32px;
   }
