@@ -1,3 +1,15 @@
 function accum(s) {
   return s.split('').map((c, i) => (c.toUpperCase() + c.toLowerCase().repeat(i))).join('-');
 }
+function uniqueInOrder(it) {
+  var result = []
+  var last
+  
+  for (var i = 0; i < it.length; i++) {
+    if (it[i] !== last) {
+      result.push(last = it[i])
+    }
+  }
+  
+  return result
+}
